@@ -214,12 +214,18 @@ export default function Profile() {
       </div>
 
       {/* SHOW ERROR */}
-      <p className="text-red-700 mt-5 mb-5">{error ? error : ""}</p>
+      {error && (
+        <p className="text-red-700 mt-5 mb-5 bg-red-200 p-3 rounded-lg">
+          {error ? error : ""}
+        </p>
+      )}
 
       {/* SHOW SUCCESS MESSAGE */}
-      <p className="text-green-700 mt-5 mb-5">
-        {updateSucess ? "User updated successfully!" : ""}
-      </p>
+      {updateSucess && (
+        <p className="text-green-700 mt-5 mb-5 bg-green-200 p-3 rounded-lg">
+          {updateSucess ? "User updated successfully!" : ""}
+        </p>
+      )}
     </div>
   );
 }
