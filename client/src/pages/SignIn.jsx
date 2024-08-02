@@ -78,7 +78,9 @@ export default function SignIn() {
       </div>
 
       {/* Display Error */}
-      {error && <p className="text-red-500 mt-5">{error}</p>}
+      {error && (
+        <p className="text-red-500 mt-5 bg-red-200 p-3 rounded-lg">{error}</p>
+      )}
     </div>
   );
 }
