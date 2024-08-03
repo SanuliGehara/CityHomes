@@ -30,7 +30,7 @@ const listingSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    furninshed: {
+    furnished: {
       type: Boolean,
       required: true,
     },
